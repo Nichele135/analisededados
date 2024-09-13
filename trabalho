@@ -1,0 +1,85 @@
+import numpy as np
+
+dados = [
+    [2018, "Janeiro", 2576261.00, 3864.00, 638.00, 361240.00, 33.00],
+    [2018, "Fevereiro", 2605207.00, 3664.00, 679.00, 366154.00, 32.00],
+    [2018, "Março", 3197326.00, 4257.00, 828.00, 369308.00, 31.00],
+    [2018, "Abril", 3508607.00, 4516.00, 864.00, 373932.00, 28.00],
+    [2018, "Maio", 3705129.00, 4763.00, 882.00, 376517.00, 31.00],
+    [2018, "Junho", 3843131.00, 4817.00, 917.00, 380575.00, 39.00],
+    [2018, "Julho", 3999933.00, 5095.00, 911.00, 384241.00, 38.00],
+    [2018, "Agosto", 4044126.00, 5054.00, 921.00, 383347.00, 34.00],
+    [2018, "Setembro", 3393644.00, 4742.00, 918.00, 379748.00, 30.00],
+    [2018, "Outubro", 3677923.00, 4517.00, 917.00, 382442.00, 27.00],
+    [2018, "Novembro", 3296694.00, 3986.00, 804.00, 383224.00, 24.00],
+    [2018, "Dezembro", 3093944.00, 4404.00, 655.00, 383962.00, 23.00],
+    [2019, "Janeiro", 2710036.00, 4039.00, 629.00, 385880.00, 30.00],
+    [2019, "Fevereiro", 2716724.00, 3667.00, 725.00, 387709.00, 25.00],
+    [2019, "Março", 3457362.00, 4523.00, 812.00, 388432.00, 25.00],
+    [2019, "Abril", 3647276.00, 4847.00, 877.00, 387742.00, 22.00],
+    [2019, "Maio", 3879343.00, 4907.00, 878.00, 386895.00, 29.00],
+    [2019, "Junho", 3946406.00, 4955.00, 898.00, 390540.00, 31.00],
+    [2019, "Julho", 4072082.00, 5260.00, 900.00, 390678.00, 28.00],
+    [2019, "Agosto", 4120937.00, 5190.00, 888.00, 392536.00, 27.00],
+    [2019, "Setembro", 3547546.00, 4586.00, 895.00, 385445.00, 28.00],
+    [2019, "Outubro", 3771212.00, 4388.00, 907.00, 390983.00, 23.00],
+    [2019, "Novembro", 3264105.00, 3959.00, 803.00, 391531.00, 21.00],
+    [2019, "Dezembro", 3389382.00, 4155.00, 717.00, 392118.00, 20.00]
+]
+
+valoresPass = [valorPass[2] for valorPass in dados]
+
+mediaPass = np.mean(valoresPass)
+
+medianaPass = np.median(valoresPass)
+
+dpPass = np.std(valoresPass)
+
+print(mediaPass, medianaPass, dpPass)
+
+
+valoresVOO = [valorVOO[3] for valorVOO in dados]
+
+mediaVOO = np.mean(valoresVOO)
+
+medianaVOO = np.median(valoresVOO)
+
+dpVOO = np.std(valoresVOO)
+
+print(mediaVOO, medianaVOO, dpVOO)
+
+
+
+valoresOcup = [valorOcup[4] for valorOcup in dados]
+
+mediaOcup = np.mean(valoresOcup)
+
+medianaOcup = np.median(valoresOcup)
+
+dpOcup = np.std(valoresOcup)
+
+print(mediaOcup, medianaOcup, dpOcup)
+
+
+
+valoresTrab = [valorTrab[5] for valorTrab in dados]
+
+mediaTrab = np.mean(valoresTrab)
+
+medianaTrab = np.median(valoresTrab)
+
+dpTrab = np.std(valoresTrab)
+
+print(mediaTrab, medianaTrab, dpTrab)
+
+
+
+valoresDesem = [valorDesem[6] for valorDesem in dados]
+
+mediaDesem = np.mean(valoresDesem)
+
+medianaDesem = np.median(valoresDesem)
+
+dpDesem = np.std(valoresDesem)
+
+print(mediaDesem, medianaDesem, dpDesem)
